@@ -1,0 +1,46 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f6f3ef;
+  background-color: white;
+}
+
+.header-row {
+  background-color: #f6f3ef;
+  font-weight: 500;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 15px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: #1f2937;
+  &--item {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #424242;
+  }
+}
+
+.checkbox {
+  // flex-basis: 2%;
+}
+
+.reserved {
+  // flex-basis: 2%;
+}

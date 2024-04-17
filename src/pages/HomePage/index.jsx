@@ -1,8 +1,10 @@
+import { useState } from "react";
 import FilterNavigationContainer from "../../components/FilterNavigationContainer";
 import FilterSection from "../../components/FilterSection";
 import Header from "../../components/Header";
 import HeaderChips from "../../components/HeaderChips";
 import ItemTable from "../../components/ItemTable";
+import TablePagination from "../../components/TablePagination";
 import style from "./style.module.scss";
 
 const HEADER_CHIPS = [
@@ -14,6 +16,8 @@ const HEADER_CHIPS = [
 ];
 
 const HomePage = () => {
+  const [showFilter, setShowFilter] = useState(false);
+
   return (
     <div className={style["home-cnt"]}>
       <Header />
@@ -25,11 +29,12 @@ const HomePage = () => {
             ))}
           </div>
           <div className={style["filter-nav-cnt"]}>
-            <FilterNavigationContainer />
+            <FilterNavigationContainer setShowFilter={setShowFilter} />
           </div>
           <ItemTable />
+          <TablePagination />
         </div>
-        <FilterSection />
+        {showFilter && <FilterSection setShowFilter={setShowFilter} />}
       </div>
     </div>
   );

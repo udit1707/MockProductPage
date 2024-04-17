@@ -16,12 +16,12 @@ const FilterInputBox = ({ label, showDropIcon }) => {
   );
 };
 
-const FilterSection = () => {
+const FilterSection = ({setShowFilter}) => {
   return (
     <div className={style["filter-section"]}>
       <div className={style["filter-header"]}>
         <div className={style["left-title"]}>Filters</div>
-        <div className={style["right-icon"]}>
+        <div className={style["right-icon"]} onClick={()=>{setShowFilter(false)}}>
           <img src={ClearIcon} />
         </div>
       </div>

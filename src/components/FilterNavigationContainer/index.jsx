@@ -4,7 +4,7 @@ import AddProductIcon from "../../utils/images/addProductIcon.svg";
 import FilterIcon from "../../utils/images/filterIcon.svg";
 import ExportIcon from "../../utils/images/exportIcon.svg";
 
-const FilterNavigationContainer = () => {
+const FilterNavigationContainer = ({setShowFilter}) => {
   return (
     <div className={style["filter-nav"]}>
       <div className={style["left-box-cnt"]}>
@@ -20,7 +20,7 @@ const FilterNavigationContainer = () => {
           <img src={AddProductIcon} className={style["btn-icon"]} />
           Add Products
         </div>
-        <div className={style["filter-btn"]}>
+        <div className={style["filter-btn"]} onClick={()=>{setShowFilter(true)}}>
           <img src={FilterIcon} className={style["btn-icon"]} />
           Filters
         </div>

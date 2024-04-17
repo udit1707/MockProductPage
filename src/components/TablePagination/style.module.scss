@@ -1,0 +1,39 @@
+.table-pagination {
+  background-color: white;
+  width: 98%;
+  margin: 10px;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+
+  .page-btn-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .control-btns {
+      margin: 0 15px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+    }
+
+    .page {
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 16.41px;
+      text-align: left;
+      color: #6b7280;
+      cursor: pointer;
+      margin: 0 15px;
+    }
+
+    .active {
+      color: white;
+      background-color: #6b7280;
+      border-radius: 8px;
+      padding: 10px;
+    }
+  }
+}
