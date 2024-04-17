@@ -1,0 +1,18 @@
+.header-chips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  border: 1px solid #d0c2aa;
+  border-radius: 8px;
+  color: #424242;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  background-color: white;
+  white-space: nowrap;
+  flex-basis: 100%;
+  margin: 0 15px;
+}

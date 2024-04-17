@@ -1,7 +1,7 @@
-import style from "./style.scss";
+import style from "./style.module.scss";
 
-const HeaderChips = () => {
-    return ( <div className={style["header-chips"]}></div> );
-}
- 
+const HeaderChips = ({ title }) => {
+  return <div className={style["header-chips"]}>{title}</div>;
+};
+
 export default HeaderChips;

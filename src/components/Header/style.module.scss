@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ebecf2;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  max-height: 150px;
+
+  .left-title {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: left;
+    color: #8d7855;
+  }
+
+  .right-cnt {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    .icon-cnt {
+      margin-right: 20px;
+    }
+    .profile-label {
+      display: flex;
+      align-items: center;
+      background-color: #f3f4f6;
+      padding: 20px ;
+      border-radius: 8px;
+
+      .profile-photo {
+        margin-right: 5px;
+      }
+
+      .profile-name {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.09px;
+        text-align: center;
+        color: #374151;
+      }
+
+      .down-arrow-icon {
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
